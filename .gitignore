@@ -1,0 +1,33 @@
+## -------------------------------------
+## Exclude the following directory/files
+## -------------------------------------
+
+## Project Minified Files
+dist/assets/css/app.css
+dist/assets/js/plugins.js
+dist/assets/js/plugins.js.map
+dist/assets/js/app.min.js
+dist/assets/js/app.min.js.map
+
+## Windows image file caches
+Thumbs.db
+
+## Windows folder config file
+Desktop.ini
+
+## Editor Settings
+*.sublime-project
+*.sublime-workspace
+.idea
+.vscode
+
+## Sublime Text plugin settings
+.sublime-grunt.cache
+
+## Composer
+composer.phar
+/vendor
+
+## Others
+/node_modules
+/logs

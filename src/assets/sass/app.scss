@@ -1,0 +1,60 @@
+/**
+ * Main Stylesheet
+ */
+@import '../../../node_modules/animate.css/animate.min.css';
+
+@import 'variables';
+@import 'typography';
+@import 'bootstrap';
+@import 'layout';
+@import 'icons';
+
+.text-grey {
+	color: #666;
+}
+
+// @media (min-width: 768px) {
+// 	.left-column {
+// 		background-image: url('../images/Mayeenul-Islam-Mayeen.jpg');
+// 		background-repeat: no-repeat;
+// 		background-size: cover;
+
+// 		&:after{
+// 			content: "";
+// 			background-color: rgba(0,0,0,0.9);
+// 			position: absolute;
+// 			top: 0;
+// 			right: 0;
+// 			bottom: 0;
+// 			left: 0;
+// 		}
+// 	}
+
+// 	#site-header {
+// 		z-index: 1;
+// 	}
+// }
+
+ul li {
+	margin-bottom: 0.5em;
+}
+
+.no-js .hide-if-no-js {
+	display: none;
+}
+
+ul.skill-badges {
+	list-style-type: none;
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		padding: 0.2em 0.4em;
+		border: 1px solid #666;
+		border-radius: 5px;
+
+		&:nth-child(even) {
+			border-color: #999;
+		}
+	}
+}

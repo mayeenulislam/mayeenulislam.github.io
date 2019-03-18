@@ -1,0 +1,25 @@
+/**
+ * Partial: Layout;
+ */
+
+
+@media (min-width: 768px) {
+	.left-column,
+	.right-column {
+		float: left;
+	}
+
+	.left-column {
+		position: fixed;
+		width: 33.3333333333%;
+	}
+
+	.right-column {
+		margin-left: 33.3333333333%;
+		width: 66.6666666667%;
+	}
+
+	.sm-h-100 {
+		height: 100%;
+	}
+}

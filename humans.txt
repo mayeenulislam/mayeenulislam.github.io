@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Name:    Mayeenul Islam Mayeen
+    Role:    Initiator, Lead Developer
+    Twitter: @mayeenulislam
+
+# THANKS
+
+	Bootstrap
+    Animate.css
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Apache Server Configs, Bootstrap, Animate.css
