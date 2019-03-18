@@ -2,13 +2,6 @@
 ## Exclude the following directory/files
 ## -------------------------------------
 
-## Project Minified Files
-dist/assets/css/app.css
-dist/assets/js/plugins.js
-dist/assets/js/plugins.js.map
-dist/assets/js/app.min.js
-dist/assets/js/app.min.js.map
-
 ## Windows image file caches
 Thumbs.db
 
