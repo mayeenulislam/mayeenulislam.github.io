@@ -1,8 +1,8 @@
 {
-  "short_name": "bem_boilerplate",
-  "name": "BEM Boilerplate",
+  "short_name": "resume_mayeenul_islam_mayeen",
+  "name": "Résumé of Mayeenul Islam Mayeen",
   "icons": [{
-    "src": "icon.png",
+    "src": "favicon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
