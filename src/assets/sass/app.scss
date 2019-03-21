@@ -58,3 +58,17 @@ ul.skill-badges {
 		}
 	}
 }
+
+.section-head {
+	&:hover:after {
+		content: "\e007";
+	    font-family: "portfolio";
+	    position: absolute;
+	    top: 2px;
+	    left: -35px;
+	    line-height: 1;
+	    vertical-align: middle;
+	    font-size: 25px;
+	    color: #999;
+	}
+}
