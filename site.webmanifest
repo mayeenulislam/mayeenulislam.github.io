@@ -2,7 +2,7 @@
   "short_name": "resume_mayeenul_islam_mayeen",
   "name": "Résumé of Mayeenul Islam Mayeen",
   "icons": [{
-    "src": "favicon.png",
+    "src": "dist/assets/images/icon.jpg",
     "type": "image/png",
     "sizes": "192x192"
   }],
