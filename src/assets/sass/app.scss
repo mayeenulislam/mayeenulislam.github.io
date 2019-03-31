@@ -72,3 +72,9 @@ ul.skill-badges {
 	    color: #999;
 	}
 }
+
+@media print {
+	.left-column {
+		border-bottom: 3px solid #ccc;
+	}
+}
