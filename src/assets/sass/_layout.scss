@@ -11,15 +11,26 @@
 
 	.left-column {
 		position: fixed;
+		width: 45%;
+	}
+
+	.right-column {
+		margin-left: 45%;
+		width: 55%;
+	}
+
+	.sm-h-100 {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.left-column {
 		width: 33.3333333333%;
 	}
 
 	.right-column {
 		margin-left: 33.3333333333%;
 		width: 66.6666666667%;
-	}
-
-	.sm-h-100 {
-		height: 100%;
 	}
 }
