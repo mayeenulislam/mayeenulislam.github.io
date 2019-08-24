@@ -1,12 +1,14 @@
 {
-  "short_name": "resume_mayeenul_islam_mayeen",
-  "name": "Résumé of Mayeenul Islam Mayeen",
-  "icons": [{
-    "src": "dist/assets/images/icon.jpg",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+    "short_name": "resume_mayeenul_islam_mayeen",
+    "name": "Résumé of Mayeenul Islam Mayeen",
+    "icons": [
+        {
+            "src": "dist/assets/images/icon.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#fafafa",
+    "theme_color": "#fafafa"
 }

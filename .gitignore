@@ -13,6 +13,7 @@ Desktop.ini
 *.sublime-workspace
 .idea
 .vscode
+.history
 
 ## Sublime Text plugin settings
 .sublime-grunt.cache
@@ -24,3 +25,4 @@ composer.phar
 ## Others
 /node_modules
 /logs
+/release

@@ -3,14 +3,14 @@
  */
 // @import '../../../node_modules/animate.css/animate.min.css';
 
-@import 'variables';
-@import 'typography';
-@import 'bootstrap';
-@import 'layout';
-@import 'icons';
+@import "variables";
+@import "typography";
+@import "bootstrap";
+@import "layout";
+@import "icons";
 
 .text-grey {
-	color: #666;
+    color: #666;
 }
 
 // @media (min-width: 768px) {
@@ -36,45 +36,55 @@
 // }
 
 ul li {
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .no-js .hide-if-no-js {
-	display: none;
+    display: none;
 }
 
 ul.skill-badges {
-	list-style-type: none;
-	padding-left: 0;
+    list-style-type: none;
+    padding-left: 0;
 
-	li {
-		display: inline-block;
-		padding: 0.2em 0.4em;
-		border: 1px solid #666;
-		border-radius: 5px;
+    li {
+        display: inline-block;
+        padding: 0.2em 0.4em;
+        border: 1px solid #666;
+        border-radius: 5px;
 
-		&:nth-child(even) {
-			border-color: #999;
-		}
-	}
+        &:nth-child(even) {
+            border-color: #999;
+        }
+    }
 }
 
 .section-head {
-	&:hover:after {
-		content: "\e007";
-	    font-family: "portfolio";
-	    position: absolute;
-	    top: 2px;
-	    left: -35px;
-	    line-height: 1;
-	    vertical-align: middle;
-	    font-size: 25px;
-	    color: #999;
-	}
+    &:hover:after {
+        content: "\e007";
+        font-family: "portfolio";
+        position: absolute;
+        top: 2px;
+        left: -35px;
+        line-height: 1;
+        vertical-align: middle;
+        font-size: 25px;
+        color: #999;
+    }
 }
 
 @media print {
-	.left-column {
-		border-bottom: 3px solid #ccc;
-	}
+    .left-column {
+        border-bottom: 3px solid #ccc;
+    }
+}
+
+.color-on-hover {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+
+    &:hover {
+        filter: none;
+        transition: filter 0.3s ease-in-out;
+    }
 }
