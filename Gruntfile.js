@@ -192,6 +192,12 @@ module.exports = function (grunt) {
          * @link: https://github.com/gruntjs/grunt-contrib-copy
          */
         copy: {
+            fonts: {
+                expand: true,
+                cwd: 'src/assets/fonts/',
+                src: [ '**/*' ],
+                dest: 'dist/assets/fonts/'
+            },
             release: {
                 files: [{
                     expand: true,
@@ -258,13 +264,13 @@ module.exports = function (grunt) {
 
 
     // @Grunt: do the following when we will type 'grunt <command>'
-    grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'postcss', 'cssmin', 'watch']);
+    grunt.registerTask('default', ['copy:fonts', 'jshint', 'uglify', 'sass', 'postcss', 'cssmin', 'watch']);
 
-    grunt.registerTask('development', ['jshint', 'sass', 'postcss', 'imagemin', 'uglify']);
+    grunt.registerTask('development', ['copy:fonts', 'jshint', 'sass', 'postcss', 'imagemin', 'uglify']);
     grunt.registerTask('dev', ['development']); //alias
-    grunt.registerTask('production', ['jshint', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin']);
+    grunt.registerTask('production', ['copy:fonts', 'jshint', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin']);
 
-    grunt.registerTask('release', ['clean', 'production', 'copy', 'compress']);
+    grunt.registerTask('release', ['clean', 'production', 'copy:release', 'compress']);
     grunt.registerTask('release_patch', ['version::patch', 'release']);
     grunt.registerTask('release_minor', ['version::minor', 'release']);
     grunt.registerTask('release_major', ['version::major', 'release']);
