@@ -9,10 +9,9 @@
 
 # THANKS
 
-	Bootstrap
-    Animate.css
+    Bootstrap
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Apache Server Configs, Bootstrap, Animate.css
+    Bootstrap
