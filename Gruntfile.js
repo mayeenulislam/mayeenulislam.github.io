@@ -270,6 +270,8 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['development']); //alias
     grunt.registerTask('production', ['copy:fonts', 'jshint', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin']);
 
+    grunt.registerTask('deploy', ['clean', 'production', 'copy:release']);
+
     grunt.registerTask('release', ['clean', 'production', 'copy:release', 'compress']);
     grunt.registerTask('release_patch', ['version::patch', 'release']);
     grunt.registerTask('release_minor', ['version::minor', 'release']);

@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-    
+
     steps:
     - uses: actions/checkout@v2
 
@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: |
         yarn install
-        grunt
+        grunt deploy
