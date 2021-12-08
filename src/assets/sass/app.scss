@@ -38,6 +38,23 @@ ul li {
     margin-bottom: 0.5em;
 }
 
+ul.iconified-ul {
+    list-style-type: none;
+
+    li {
+        position: relative;
+
+        &::before {
+            content: "\e00b";
+            font-family: portfolio;
+            position: absolute;
+            top: 3px;
+            left: -30px;
+            color: #333;
+        }
+    }
+}
+
 .no-js .hide-if-no-js {
     display: none;
 }

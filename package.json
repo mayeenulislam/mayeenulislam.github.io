@@ -1,7 +1,7 @@
 {
     "name": "mayeen_portfolio",
     "title": "Mayeen Portfolio",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": true,
     "devDependencies": {
         "autoprefixer": "^9.6.1",
@@ -41,5 +41,6 @@
         "Safari >= 10",
         "Android >= 6",
         "not ExplorerMobile <= 11"
-    ]
+    ],
+    "dependencies": {}
 }
