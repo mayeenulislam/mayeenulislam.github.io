@@ -11,6 +11,7 @@ Desktop.ini
 ## Editor Settings
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 .idea
 .vscode
 .history
