@@ -755,7 +755,7 @@
 
                 <footer id="site-footer" class="pt-2 px-5 pb-3 small text-muted">
                     <hr>
-                    &copy; 2020-2022 <a href="https://nanodesignsbd.com?ref=portfolio" class="text-muted" target="_blank" rel="noopener"><strong>nano</strong>designs</a>
+                    &copy; 2020-<span id="year-today"></span> <a href="https://nanodesignsbd.com?ref=portfolio" class="text-muted" target="_blank" rel="noopener"><strong>nano</strong>designs</a>
                     <span class="ml-1 mr-1">|</span>
                     <a href="https://mayeenulislam.github.io/" rel="self" class="text-muted"><strong>Source:</strong> https://mayeenulislam.github.io</a>
                     <span class="d-inline-block text-muted" id="last-updated"></span>
@@ -776,6 +776,8 @@
         </script>
 
         <script>
+            document.getElementById('year-today').innerText = new Date().getFullYear();
+
             fetch('https://api.github.com/repos/mayeenulislam/mayeenulislam.github.io/branches/master')
                 .then(function(response) {
                     return response.json();
