@@ -8,6 +8,9 @@ Thumbs.db
 ## Windows folder config file
 Desktop.ini
 
+## Mac directory config file
+.DS_Store
+
 ## Editor Settings
 *.sublime-project
 *.sublime-workspace
