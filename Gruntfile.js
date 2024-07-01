@@ -9,11 +9,6 @@ module.exports = function (grunt) {
 
     'use strict';
 
-    var today = new Date();
-    var year = today.getFullYear();
-
-    var sass = require('node-sass');
-
     // @Grunt: Get our configuration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -57,7 +52,7 @@ module.exports = function (grunt) {
          */
         sass: {
             options: {
-                implementation: sass,
+                implementation: require('sass'),
                 sourceMap: false
             },
             dist: {
@@ -75,7 +70,7 @@ module.exports = function (grunt) {
             options: {
                 map: false,
                 processors: [
-					require('autoprefixer')
+                    require('autoprefixer')
                 ]
             },
             dist: {
@@ -258,7 +253,6 @@ module.exports = function (grunt) {
 
     });
 
-
     // @Grunt: we're using the following plugins
     require('load-grunt-tasks')(grunt);
 
@@ -274,5 +268,4 @@ module.exports = function (grunt) {
     grunt.registerTask('release_patch', ['version::patch', 'release']);
     grunt.registerTask('release_minor', ['version::minor', 'release']);
     grunt.registerTask('release_major', ['version::major', 'release']);
-
 };
